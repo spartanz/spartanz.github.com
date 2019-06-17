@@ -1,0 +1,10 @@
+language: scala
+before_install:
+- openssl aes-256-cbc -K $encrypted_4e6aea6c9f53_key -iv $encrypted_4e6aea6c9f53_iv
+  -in travis-deploy-key.enc -out travis-deploy-key -d
+- export PATH=${PATH}:./vendor/bundle
+install:
+- rvm use 2.3.0 --install --fuzzy
+- gem update --system
+- gem install sass
+- gem install jekyll -v 3.2.1

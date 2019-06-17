@@ -1,2 +1,2 @@
-# spartanz.github.com
+# spartanz.github.io
 SpartanZ website
